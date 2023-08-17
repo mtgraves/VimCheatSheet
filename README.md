@@ -14,3 +14,7 @@ from visual mode with highlighted blocks, issue `:` which will give you somethin
 ```vim
 :'<,'>s/stuff.*/\0things
 ```
+
+#### Repeat a vim command on a new highlighted block
+
+press `.` to execute the same command on a newly highlighted block.
