@@ -13,6 +13,12 @@ openssl s_client -connect host:port
 
 in general, `openssl` is a good tool with a lot of 
 
+#### checking if a smtp server accepts ssl cnxn
+
+```sh
+openssl s_client -starttls smtp -connect host:port
+```
+
 ---
 ## Vim
 personal vim cheat sheet
