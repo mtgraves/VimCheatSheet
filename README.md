@@ -1,4 +1,20 @@
-# VimCheatSheet
+# Personal reference
+
+This is yet another attempt at keep track of things i cannot remember when i need them.
+
+---
+## Networking
+
+#### Probe server running SSL
+to check
+```sh
+openssl s_client -connect host:port
+```
+
+in general, `openssl` is a good tool with a lot of 
+
+---
+## Vim
 personal vim cheat sheet
 
 #### Add to end of every line containing certain characters
