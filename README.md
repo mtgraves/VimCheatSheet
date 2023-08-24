@@ -2,6 +2,25 @@
 
 This is yet another attempt at keep track of things i cannot remember when i need them.
 
+## Corporate Proxy Config
+
+### accessing github
+
+When running the `maturin` utility (or just `rust` dependency install, or anything that needs to reach out to `github`) you need to reach out to the public `github` instance.  If you're behind a corporate proxy that requires a certificate, Here's how to do it.
+
+- find your `.gitconfig` file: `git config --list --show-origin`
+- open the file and add the following to it (changing the cert paths and your username):
+```
+[http]
+[http "https://github.com"]
+	proxy = {{proxy_url}}
+	ssLCAInfo = {{cert_location}}
+	proxySSLCert = {{cert_location}}
+
+[credential "https://github.com"]
+	username={{github_username}}
+```
+
 ---
 ## Networking
 
